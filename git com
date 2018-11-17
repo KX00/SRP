@@ -1,3 +1,9 @@
 git add . 
 git commit -m "besked"
 git push
+
+
+
+exit vim:
+1) shift + .
+2) skriv q! og tryk enter
