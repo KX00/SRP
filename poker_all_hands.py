@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 ## Samplesize and data is initialized
-sampleSize = 1000
+sampleSize = 20000
 data = np.array([])
 
 ## Open in csv (excel)

@@ -1,5 +1,4 @@
 from poker_hands_compare import random_card, get_winner, Winner
-
 def get_win_pct_list_for_hand(hand_one_card_one, hand_one_card_two,sampleSize):
 
     hand_one_win_pct_list = []
@@ -13,10 +12,10 @@ def get_win_pct_list_for_hand(hand_one_card_one, hand_one_card_two,sampleSize):
 
     x = 0 
 
-    while x < sampleSize:
-        hand_two_card_one = random_card()
-        hand_two_card_two = random_card()
 
+    while x < sampleSize:
+        hand_two_card_one = random_card(hand_one_card_one, hand_one_card_two)
+        hand_two_card_two = random_card(hand_one_card_one, hand_one_card_two, hand_two_card_one)
         winner = get_winner(hand_one_card_one, hand_one_card_two, hand_two_card_one, hand_two_card_two)
         x += 1
         
